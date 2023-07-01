@@ -7,7 +7,6 @@ export default function Header()
         <div className='header'>
             <h3>Aoun Shah</h3>
             <h4>Frontend Developer</h4>
-            <h5>aounshah.website</h5>
             <button id='email' className='emailBtn'>Email</button>
         </div>
     )

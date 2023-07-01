@@ -391,7 +391,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+        value: true
 });
 exports.default = App;
 
@@ -422,15 +422,15 @@ var _footer2 = _interopRequireDefault(_footer);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-    return _react2.default.createElement(
-        'div',
-        { className: 'digital-card' },
-        _react2.default.createElement(_Image2.default, null),
-        _react2.default.createElement(_Header2.default, null),
-        _react2.default.createElement(_About2.default, null),
-        _react2.default.createElement(_Interests2.default, null),
-        _react2.default.createElement(_footer2.default, null)
-    );
+        return _react2.default.createElement(
+                'div',
+                { className: 'digital-card' },
+                _react2.default.createElement(_Image2.default, null),
+                _react2.default.createElement(_Header2.default, null),
+                _react2.default.createElement(_About2.default, null),
+                _react2.default.createElement(_Interests2.default, null),
+                _react2.default.createElement(_footer2.default, null)
+        );
 }
 
 /***/ }),

@@ -12,7 +12,7 @@ body {
 }
 
 .digital-card {
-    width: 50%;
+    width: 40%;
     margin: 50px auto;
     margin-top: 180px;
     /* border: 0.1px solid white; */
@@ -23,7 +23,10 @@ body {
 
 
 .main-image {
-    background-image: url('https://imgur.com/gallery/jMjIXnA');
+    background-image: url('IMG_20220104_112926.jpg');
+    height: 40%;
+    width: 100%;
+    background-size: cover;
 }
 
 
@@ -37,17 +40,18 @@ body {
 
 .header > h4 {
     color: #F3BF99;
-    font-size: 0.8em;
+    font-size: 1.3em;
 }
 
 
 .header > button {
-    padding: 8px 110px;
+    padding: 2.9% 40%;
     color: #374151;
     background-color: #ffffff;
     border: none;
     border-radius: 5px;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 
@@ -76,5 +80,40 @@ body {
 }
 
 .footer > svg {
-    flex-basis: 9%; 
+    flex-basis: 6%;
+    transition: transform 0.5s ease-in-out;
 }
+
+svg:hover {
+    color: white;
+    cursor: pointer;
+    /* box-shadow: 0 0 10px 2px gold; */
+    transform: rotate(360deg);
+}
+
+
+button:hover {
+    box-shadow: 0 0 20px 10px rgba(255, 223, 0, 0.1);
+}
+
+
+@media (max-width : 850px )
+{
+    .main-image {
+        height: 45%;
+    }
+    .digital-card {
+        width: 60%;
+    }
+}
+
+@media (max-width :636px)
+{
+    .main-image {
+        height: 35%;
+    }
+
+    .digital-card {
+        width: 80%;
+    }
+}    

@@ -1,4 +1,4 @@
-# co06a4babbd0485afe2d7e1bc
+# Digital Business Card
 
 Quick start:
 
@@ -6,6 +6,13 @@ Quick start:
 $ yarn # npm install
 $ yarn build # npm run build
 ````
+or 
+
+```
+$ npm run watch
+$
+```
+and now open the html file with the live server.
 
 ## Development
 

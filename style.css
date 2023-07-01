@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-content:center;
+    height: 100vh;
+    background-color: #23252C;
+    margin: 0;
+    padding: 0;
+}
+
+.digital-card {
+    width: 50%;
+    margin: 50px auto;
+    margin-top: 180px;
+    /* border: 0.1px solid white; */
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: #1A1B21;
+}
+
+
+.main-image {
+    background-image: url('https://imgur.com/gallery/jMjIXnA');
+}
+
+
+.header {
+    text-align: center;
+}
+.header > h3 {
+    color:white;
+    font-size: 1.7em;
+}
+
+.header > h4 {
+    color: #F3BF99;
+    font-size: 0.8em;
+}
+
+
+.header > button {
+    padding: 8px 110px;
+    color: #374151;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+
+.about,.Interests
+{
+    padding: 2px 30px;
+    color: #DCDCDC;
+}
+
+
+.about > h1,.Interests > h1
+{
+    color: #F5F5F5;
+}
+
+.Interests {
+    margin-bottom: 30px;
+}
+
+.footer {
+    display:  flex;
+    justify-content: space-around;
+    background-color: #161619;
+    padding: 20px 0;
+
+}
+
+.footer > svg {
+    flex-basis: 9%; 
+}

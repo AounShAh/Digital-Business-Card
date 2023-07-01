@@ -1,119 +1,113 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    display: grid;
-    place-content:center;
-    height: 100vh;
-    background-color: #23252C;
-    margin: 0;
-    padding: 0;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: #23252c;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit--scrollbar {
+  display: none;
 }
 
 .digital-card {
-    width: 40%;
-    margin: 50px auto;
-    margin-top: 180px;
-    /* border: 0.1px solid white; */
-    border-radius: 18px;
-    overflow: hidden;
-    background-color: #1A1B21;
+  width: 40%;
+  margin: 50px auto;
+  margin-top: 180px;
+  /* border: 0.1px solid white; */
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: #1a1b21;
 }
-
 
 .main-image {
-    background-image: url('IMG_20220104_112926.jpg');
-    height: 40%;
-    width: 100%;
-    background-size: cover;
+  background-image: url("IMG_20220104_112926.jpg");
+  height: 40%;
+  width: 100%;
+  background-size: cover;
 }
-
 
 .header {
-    text-align: center;
+  text-align: center;
 }
 .header > h3 {
-    color:white;
-    font-size: 1.7em;
+  color: white;
+  font-size: 1.7em;
 }
 
 .header > h4 {
-    color: #F3BF99;
-    font-size: 1.3em;
+  color: #f3bf99;
+  font-size: 1.3em;
 }
-
 
 .header > button {
-    padding: 2.9% 40%;
-    color: #374151;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    cursor: pointer;
+  padding: 2.9% 40%;
+  color: #374151;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 
-
-.about,.Interests
-{
-    padding: 2px 30px;
-    color: #DCDCDC;
+.about,
+.Interests {
+  padding: 2px 30px;
+  color: #dcdcdc;
 }
 
-
-.about > h1,.Interests > h1
-{
-    color: #F5F5F5;
+.about > h1,
+.Interests > h1 {
+  color: #f5f5f5;
 }
 
 .Interests {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .footer {
-    display:  flex;
-    justify-content: space-around;
-    background-color: #161619;
-    padding: 20px 0;
-
+  display: flex;
+  justify-content: space-around;
+  background-color: #161619;
+  padding: 20px 0;
 }
 
 .footer > svg {
-    flex-basis: 6%;
-    transition: transform 0.5s ease-in-out;
+  flex-basis: 6%;
+  transition: transform 0.5s ease-in-out;
 }
 
 svg:hover {
-    color: white;
-    cursor: pointer;
-    /* box-shadow: 0 0 10px 2px gold; */
-    transform: rotate(360deg);
+  color: white;
+  cursor: pointer;
+  /* box-shadow: 0 0 10px 2px gold; */
+  transform: rotate(360deg);
 }
-
 
 button:hover {
-    box-shadow: 0 0 20px 10px rgba(255, 223, 0, 0.1);
+  box-shadow: 0 0 20px 10px rgba(255, 223, 0, 0.1);
 }
 
-
-@media (max-width : 850px )
-{
-    .main-image {
-        height: 45%;
-    }
-    .digital-card {
-        width: 60%;
-    }
+@media (max-width: 850px) {
+  .main-image {
+    height: 45%;
+  }
+  .digital-card {
+    width: 60%;
+  }
 }
 
-@media (max-width :636px)
-{
-    .main-image {
-        height: 35%;
-    }
+@media (max-width: 636px) {
+  .main-image {
+    height: 35%;
+  }
 
-    .digital-card {
-        width: 80%;
-    }
-}    
+  .digital-card {
+    width: 80%;
+  }
+}

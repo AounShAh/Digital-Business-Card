@@ -11,6 +11,10 @@ body {
     padding: 0;
 }
 
+body::-webkit-scrollbar {
+display: none;
+}
+
 .digital-card {
     width: 40%;
     margin: 50px auto;

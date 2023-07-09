@@ -1,119 +1,285 @@
-* {
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
     box-sizing: border-box;
-}
-
-body {
-    display: grid;
-    place-content:center;
-    height: 100vh;
-    background-color: #23252C;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
     margin: 0;
     padding: 0;
-}
-
-.digital-card {
-    width: 40%;
-    margin: 50px auto;
-    margin-top: 180px;
-    /* border: 0.1px solid white; */
-    border-radius: 18px;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+    height: 100svh;
+    background-color: #23252C;
     overflow: hidden;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+
+
+  /* ----------------------------------------------------- */
+
+
+  body {
+    display: flex;
+    /* place-content: center; */
+    justify-content: center;
+    align-items: center;
+    /* padding: 90px 0; */
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .container {
+    /* height: 100vh;
+    height: 100svh; */
     background-color: #1A1B21;
-}
-
-
-.main-image {
-    background-image: url('IMG_20220104_112926.jpg');
-    height: 40%;
-    width: 100%;
-    background-size: cover;
-}
-
-
-.header {
+    /* display: grid; */
+    /* flex-direction: column; */
+    width: 70%;
+    /* margin: 0 auto; */
+    /* margin-top: 80px; */
+    margin: 1.875em 0;
+    border-radius: 20px;
+    /* place-content: center; */
     text-align: center;
-}
-.header > h3 {
-    color:white;
-    font-size: 1.7em;
-}
+    /* outline: 2px solid red; */
+    overflow: hidden;
+  }
 
-.header > h4 {
+
+  .main-image {
+    height: 34vh;
+    /* min-height: 310px; */
+    /* width: 120%; */
+    /* height: 100%; */
+    background-image: url('IMG_20221006_154834_853.jpg');
+    /* background-image: url('icon.svg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 310px; */
+    /* border-radius: 10px; */
+  }
+
+
+
+  .container > h1 {
+    color:#FFFFFF;
+    font-family: 'inter';
+    font-weight: 700;
+    /* border: 1px solid #000000; */
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .container > h3 {
     color: #F3BF99;
-    font-size: 1.3em;
-}
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
 
 
-.header > button {
-    padding: 2.9% 40%;
-    color: #374151;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    cursor: pointer;
-}
+  button {
+    /* padding:2px 92px; */
+    color: #F3BF99;
+    margin-bottom: 0.9375em;
+    width: 80%;
+  }
 
 
-.about,.Interests
-{
-    padding: 2px 30px;
-    color: #DCDCDC;
-}
+  main {
+    /* padding: 0 30px; */
+    text-align: left;
+    margin: 0 auto;
+    /* display: block; */
+    width: 80%;
 
+  }
 
-.about > h1,.Interests > h1
-{
+  main h1 {
     color: #F5F5F5;
-}
+  }
 
-.Interests {
-    margin-bottom: 30px;
-}
+  main p {
+    color: #DCDCDC;
+  }
 
-.footer {
-    display:  flex;
-    justify-content: space-around;
+  .interest {
+    margin-bottom: 0.9375em;
+    margin-top: 0.3125em;
+  }
+
+
+
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin:15px 0; */
+    padding: 2%  0;
     background-color: #161619;
-    padding: 20px 0;
+    margin: 0;
+  }
 
-}
+  svg {
+    width: 10%;
+  }
 
-.footer > svg {
-    flex-basis: 6%;
-    transition: transform 0.5s ease-in-out;
-}
-
-svg:hover {
+  svg:hover {
     color: white;
     cursor: pointer;
-    /* box-shadow: 0 0 10px 2px gold; */
-    transform: rotate(360deg);
+  }
+
+  button:hover {
+    cursor: pointer;
+    color: black;
+    /* background-color: rgb(104, 25, 25); */
+    /* border: none; */
+  }
+
+  .mobile-screen-suggestion {
+    display: none;
+  }
+
+  .credits {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-size: 1vh;
+  }
+
+@media (min-width: 460px) {
+
+  .main-image {
+    height: 39vh;
+  }
 }
 
 
-button:hover {
-    box-shadow: 0 0 20px 10px rgba(255, 223, 0, 0.1);
-}
-
-
-@media (max-width : 850px )
+@media (min-width:580px)
 {
-    .main-image {
-        height: 45%;
-    }
-    .digital-card {
-        width: 60%;
-    }
+
+  .main-image {
+    /* width: 80%; */
+    background-position:left;
+  }
+
+  button {
+    padding:3px 0;
+  }
+  .container {
+    width: 60%;
+  }
 }
 
-@media (max-width :636px)
-{
-    .main-image {
-        height: 35%;
-    }
 
-    .digital-card {
-        width: 80%;
-    }
-}    
+@media (min-width:900px)
+{
+  /* body {
+    font-size: 1.4em;
+  } */
+
+  .container {
+    width: 55%;
+  }
+  p {
+    font-size: 1.1em;
+  }
+  svg {
+    width: 8%;
+  }
+}
+
+
+@media (min-width:1160px)
+{
+  .container {
+    width: 40%;
+  }
+  button {
+    /* padding-top: 1.5%;
+    padding-bottom: 1.5%; */
+    font-size: 1.3em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+  .mobile-screen-suggestion {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    color: red;
+  }
+}
+
+@media (min-width:1360px)
+{
+  h1 {
+    font-size: 1.4em;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+  .container {
+    width: 25%;
+  }
+
+  .main-image {
+    height: 38vh;
+  }
+
+  button {
+    padding-top: 0.3px;
+    padding-bottom: 0.3px;
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width:1500px)
+{
+  .container {
+    width: 30%;
+  }
+}
+
+
